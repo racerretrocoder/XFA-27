@@ -2,7 +2,7 @@
 An Advanced, cool looking XFA-27 From Ace combat 2 (tm) to Flightgear, 
  ![this plane](fgfs-20231205031035.png)
 # Now with damage on it! 
-so you can shoot down your freinds in any OPRF damageable aircraft, F-16, Viggen, and sams too
+so you can shoot down your freinds in this or any OPRF damageable aircraft, F-16, Viggen, and sams too
 
 Please dont use this in OPRF events, 
 
