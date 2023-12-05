@@ -1,0 +1,1366 @@
+<?xml version="1.0"?>
+	
+<PropertyList>
+
+	<sim>
+
+		<description>XFA-27</description>
+<long-description>The XFA-27 is a carrier-based stealth fighter which has been developed with the aim of creating an aircraft that can demonstrate extreme performance in maneuverability, speed, and weaponry. Information on the country of origin and manufacturer has not been discovered yet, making this a Very highly classified aircraft. Featuring 4 all-moving tailrollvons, large canards, varible sweeping wings that auto sweep at 400 kts and unique vectoring nozzles, it is capable of Perfect maneuverability. It comes equipped with 2 Aim-9Z's, 8 Aim-120X's, and 4 HVALRAAM's (VA-7's) (High Velocity Advanced Long Range Air-Air Missile's, (Prounounced: Have-Ram, the L is silent)) which can inflict So much damage at super hyper sonic speeds (Mach 8), but requires the skills of a  pilot to use efficiently because its manuverability might be a little too high. </long-description>
+		
+		<author>Michael, Phoenix, Model: Phoenix, FDM: Phoenix</author>
+		
+	
+		
+		<rating>
+			<FDM type="int">5</FDM>
+			<systems type="int">5</systems>
+			<cockpit type="int">2</cockpit>
+			<model type="int">4.5</model>
+		</rating>
+	
+		<flight-model>yasim</flight-model>
+		
+		<aero>xfa27yasim</aero>
+		
+		<fuel-fraction>1</fuel-fraction>
+		
+		<startup>
+			<splash-texture>Aircraft/XFA-27/Splash.png</splash-texture>
+		</startup>
+	
+		<model>
+			<path>Aircraft/XFA-27/Models/XFA-27.xml</path>
+		</model>
+		
+		<submodels> 
+    		<serviceable type="bool">true</serviceable>
+    		<path>Aircraft/XFA-27/Submodels.xml</path>
+           
+			 
+  		</submodels>
+				
+		<systems>
+			<electrical>
+				<path>Aircraft/XFA-27/System/Electrical.xml</path>
+			</electrical>
+			<autopilot>
+			   <path>Aircraft/XFA-27/System/Autopilot.xml</path>
+			</autopilot>
+		</systems>
+
+	
+	    <mp-systems>
+					<radar-enabled type="bool">true</radar-enabled>
+					<ecm-rwr-enabled type="bool">true</ecm-rwr-enabled>
+					<combat-enabled type="bool">true</combat-enabled>
+		</mp-systems>
+	
+		<sound>
+			<path>Aircraft/XFA-27/Sounds/Sound.xml</path>
+		</sound>
+		
+		<multiplay>
+			<chat_display>1</chat_display>
+			<generic>
+				<int type="int">0</int>
+					<int type="int">0</int>
+						<int type="int">0</int>
+							<int type="int">0</int>
+								<int type="int">0</int>
+							<int type="int">0</int>
+						<int type="bool">0</int>
+					<int type="int">0</int>
+			</generic>
+		</multiplay>
+		
+		<menubar>
+			<default>
+				<menu n="100">
+					<label>XFA-27</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.toggle()</script>
+						</binding>
+					</item>
+ <item>
+                        <label>Combat event log</label>
+                        <binding>
+                            <command>dialog-show</command>
+                            <dialog-name>flightlog</dialog-name>
+                        </binding>
+                    </item>
+				</menu>
+			</default>
+		</menubar>
+		
+		<help>
+			<title>XFA-27</title>
+			
+			<key>
+				<name>c</name>
+				<desc>Toggle canopy</desc>
+			</key>
+			
+			<key>
+				<name>O/o</name>
+				<desc>Toggle arrestor hook</desc>
+			</key>
+			
+			<key>
+				<name>}</name>
+				<desc>Start/Stop engines</desc>
+			</key>
+			
+			<key>
+				<name>e</name>
+				<desc>Fire gun</desc>
+			</key>
+			
+			<key>
+				<name>Ctrl+d</name>
+				<desc>Toggle weapons doors</desc>
+			</key>
+			
+			<key>
+				<name>l</name>
+				<desc>Launch flares</desc>
+			</key>
+			<key>
+        <name>T</name>
+        <desc>Toggle RWR</desc>
+      </key>
+      <key>
+        <name>t</name>
+        <desc>Change Radar Distances (10, 20 50,100,120)</desc>
+      </key>
+      <key>
+        <name>R</name>
+        <desc>Activate/desactivate targeting the nearest (the target have to be bellow radar range)</desc>
+      </key>
+      <key>
+        <name>H</name>
+        <desc>Toggle Armements Circles</desc>
+      </key>
+	   <key>
+        <name>n</name>
+        <desc>Next Target</desc>
+      </key>
+      <key>
+        <name>Ctrl-n</name>
+        <desc>Previous Target</desc>
+      </key>  
+			
+			<line>Take off:</line>
+			<line>Release the park brake and set the throttle  around 20 percent RPM and raise flaps one time</line>
+			<line>Rotate at around 20 knots and align with the runway, and then full throttle</line>	
+			<line>rotate at  around 130 knots and  pull back the stick </line>
+			<line>keep a reasonable pitch</line>
+			<line>Be carefull with the afterburner, because the vectors will lift the F22's nose very much</line>
+			<line>The vectors are controled by the yoke</line>
+			<line>Landing:</line>
+			<line>Reduce speed around 180 knots and set landing gear down</line>
+			<line>AOA minus 10 degrees</line>
+			<line>Final approach speed 140 knots</line>
+			<line>Touch at 120 knots AOA  +10 degrees </line>
+			<line>Press "b" to brake.</line>
+			<line> </line>
+			<line>FUEL CONSUMPTON DATA</line>
+			<line>The XFA-27 is currently optimised for cuising at 45000ft.</line>
+			<line>Each set of figures was obtained  from full tanks to dry on a clean configuration</line>
+			<line>MAXIMUM AFTERBURNER - Fuel duration - 2 min 50 seconds</line>
+			<line>Max Supercruise, 45000ft at 425kt IAS ( Mach 1.4 - 1.5 )- Fuel duration 37 min.</line>
+			<line>High sub sonic cruise, 45000ft at 265kt IAS ( Mach 0.9 ) - Fuel Duration 3hrs 50 min ESTIMATED.</line>
+			<line>It is advised you make use of in flight  refueling with tankers</line>
+		</help>
+	
+		<hud>
+		   <path n="1">Aircraft/XFA-27/HUD/hud.xml</path>
+		   <visibility n="1">true</visibility>
+		   <palette>
+			<color n="0">
+			 <alpha type="float">0.85</alpha>
+			 <antialiased type="bool">true</antialiased>
+			 <brightness type="float">0.85</brightness>
+			 <transparent type="bool">true</transparent>
+			 <red type="float">0.38</red>
+			 <green type="float">1.0</green>
+			 <blue type="float">0.22</blue>
+			</color>
+			<color n="1">
+			 <alpha type="float">0.85</alpha>
+			 <antialiased type="bool">true</antialiased>
+			 <brightness type="float">0.85</brightness>
+			 <transparent type="bool">true</transparent>
+			 <red type="float">1.0</red>
+			 <green type="float">0.2</green>
+			 <blue type="float">0.0</blue>
+			</color>
+			<color n="2">
+			 <alpha type="float">0.85</alpha>
+			 <antialiased type="bool">true</antialiased>
+			 <brightness type="float">0.85</brightness>
+			 <transparent type="bool">true</transparent>
+			 <red type="float">0</red>
+			 <green type="float">1</green>
+			 <blue type="float">1</blue>
+			</color>
+		   </palette>
+		     <clipping>
+    <left type="double">-100</left>
+    <right type="double">85</right>
+    <top type="double">45</top>
+    <bottom type="double">-165</bottom>
+     </clipping>
+		  </hud>
+		
+		<instrumentation>
+				<path>Aircraft/XFA-27/Systems/Instrumentation.xml</path>
+		<!--	<path>Aircraft/XFA-27/Systems/radar.xml</path>   -->
+		
+				<fuel-gauges>
+					<total type="double">100</total>
+				</fuel-gauges>
+		
+				<g-meter>
+					<g-max archive="y" type="double">1</g-max>
+					<g-min archive="y" type="double">1</g-min>
+				</g-meter>
+				
+				<radar-altimeter>
+					<limit-bug type="double">250</limit-bug>
+				</radar-altimeter>
+		
+				<aoa-indexer>
+					<!-- target = 11.3 deg AoA -->
+					<too-slow-deg>13.7</too-slow-deg>	<!-- target +2.4 deg -->
+					<slow-deg>12.1</slow-deg>			<!-- target +0.8 deg -->
+					<target-deg>11.3</target-deg>		<!-- target -->
+					<fast-deg>10.5</fast-deg>			<!-- target -0.8 deg -->
+					<too-fast-deg>8.9</too-fast-deg>	<!-- target -2.4 deg -->
+				</aoa-indexer>
+		
+				<warnings>
+					<master-caution type="bool">0</master-caution>
+				</warnings>
+		</instrumentation>
+
+		<rendering>
+			<redout>
+				<parameters>
+					<blackout-complete-g>9.1</blackout-complete-g>
+					<blackout-onset-g>7.5</blackout-onset-g>
+				</parameters>
+			</redout>
+		</rendering>
+	
+		<view n="0">
+		<name>Cockpit View</name>
+		<type>lookfrom</type>
+		<internal archive="y">true</internal>
+		<config>
+			<pitch-offset-deg>-4.0</pitch-offset-deg>
+			<x-offset-m archive="y">0</x-offset-m><!--  direita/esquerda/de z para x   -->
+			<y-offset-m archive="y">0.3</y-offset-m><!-- cima/baixo/de y para y   -->
+			<z-offset-m archive="y">-5.1</z-offset-m><!--  frente/atraz/de x para z  -->
+			<default-field-of-view-deg>75.3</default-field-of-view-deg>
+		</config>
+		</view>
+		
+		<view n="100">
+	   <name>Pilot cam</name>
+        <internal archive="y">false</internal>
+        <config>
+		 <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+          <x-offset-m archive="y">0.00</x-offset-m>
+          <y-offset-m archive="y">0.35</y-offset-m>
+          <z-offset-m archive="y">-5.5</z-offset-m>
+          <pitch-offset-deg>0</pitch-offset-deg>
+		  <heading-offset-deg>180</heading-offset-deg>
+          <default-field-of-view-deg>95</default-field-of-view-deg>
+        </config>
+      </view>
+		
+		
+		<view n="1">
+			<config>
+				<target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+				<pitch-offset-deg>0</pitch-offset-deg>
+			</config>
+		</view>
+	
+		<view n="2">
+			<config>
+				<y-offset-m archive="y" type="double">6.0</y-offset-m>
+				<z-offset-m archive="y">-19.7</z-offset-m>
+				<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+			</config>
+		</view>
+	
+		<view n="3">
+			<config>
+				<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+			</config>
+		</view>
+	
+		<view n="4">
+			<config>
+				<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+			</config>
+		</view>
+	
+		<view n="5">
+			<config>
+				<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+			</config>
+		</view>
+	
+		<view n="6">
+			<config>
+				<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+			</config>
+		</view>
+		
+	<!-- payload options -->
+
+
+<weight n="0">
+<name>pylon1.L</name>
+<tank>4</tank>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>600gal-tank</name>
+<lbs>271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+
+
+<weight n="1">
+<name>pylon2.L</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+<weight n="2">
+<name>pylon3.L</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+
+<weight n="3">
+<name>L-side-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="4">
+<name>L-lower-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>3x AIM-120</name>
+<lbs>1005.0</lbs>
+</opt>
+
+<opt>
+<name>1x AIM-120, 1x MK-82</name>
+<lbs>835.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="5">
+<name>R-lower-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>3x AIM-120</name>
+<lbs>1005.0</lbs>
+</opt>
+
+<opt>
+<name>1x AIM-120, 1x MK-82</name>
+<lbs>835.0</lbs>
+</opt>
+</weight>	
+
+<weight n="6">
+<name>r-side-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="7">
+<name>pylon3.R</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="8">
+<name>pylon2.R</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+<weight n="9">
+<name>pylon1.R</name>
+<tank>5</tank>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>600gal-tank</name>
+<lbs>271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>		
+
+
+	</sim>
+<payload>
+        <d-config>
+            <full_damage_dist_m type="double">3</full_damage_dist_m>
+            <use_hitpoints_instead_of_failure_modes_bool type="bool">false</use_hitpoints_instead_of_failure_modes_bool>
+            <hp_max type="double">90</hp_max>
+            <hitable_by_air_munitions type="bool">true</hitable_by_air_munitions>
+            <hitable_by_cannon type="bool">true</hitable_by_cannon>
+            <is_fleet type="bool">false</is_fleet>
+            <rwr_to_screen type="bool">true</rwr_to_screen>
+            <rwr_audio_extended type="bool">false</rwr_audio_extended>
+            <tacview_supported type="bool">false</tacview_supported>
+            <m28_auto type="bool">false</m28_auto>
+            <mlw_max type="double">0</mlw_max>
+            <auto_flare_caller type="bool">false</auto_flare_caller>
+		</d-config>
+		<!-- I think this should go here... -->
+		<weight n="0">
+<name>pylon1.L</name>
+<tank>4</tank>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>600gal-tank</name>
+<lbs>271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+
+
+<weight n="1">
+<name>pylon2.L</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+<weight n="2">
+<name>pylon3.L</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+
+<weight n="3">
+<name>L-side-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="4">
+<name>L-lower-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-120</name>
+<lbs>1005.0</lbs>
+</opt>
+
+<opt>
+<name>MK-82</name>
+<lbs>835.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="5">
+<name>R-lower-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-120</name>
+<lbs>1005.0</lbs>
+</opt>
+
+<opt>
+<name>1x MK-82</name>
+<lbs>835.0</lbs>
+</opt>
+</weight>	
+
+<weight n="6">
+<name>r-side-bay</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="7">
+<name>pylon3.R</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="8">
+<name>pylon2.R</name>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+<weight n="9">
+<name>pylon1.R</name>
+<tank>5</tank>
+<weight-lb>0</weight-lb>
+<selected>EMPTY</selected>
+<opt>
+<name>EMPTY</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>600gal-tank</name>
+<lbs>271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+
+
+		
+	  <armament>
+            <enable-craters type="bool">true</enable-craters>
+            <MLW-bearing type="double">0</MLW-bearing>
+            <MLW-count type="int">0</MLW-count>
+            <MLW-launcher type="string"></MLW-launcher>
+            <MAW-bearing type="double">0</MAW-bearing>
+            <MAW-active type="bool">false</MAW-active>
+            <MAW-semiactive type="bool">false</MAW-semiactive>
+            <msg type="bool">true</msg>
+            <spike type="bool">false</spike>
+            <models type="string">Aircraft/F-22/Models/emesary/</models>
+
+ <aim-120>
+            <type-id type="int">52</type-id>
+            <short-name type="string">A120B</short-name>
+            <long-name type="string">AIM-120B AMRAAM</long-name>
+            <guidance type="string">sample</guidance>
+            <vol-search type="double">0.00</vol-search>
+            <vol-track type="double">1.00</vol-track>
+            <max-fire-range-nm type="int">38.8</max-fire-range-nm>
+            <min-fire-range-nm type="double">0.35</min-fire-range-nm>
+            <FCS-field-deg type="int">110</FCS-field-deg>                      <!-- At least 35 x 2 according to MLU Tape 3 document, but what variant is it? -->
+            <seeker-field-deg type="int">135</seeker-field-deg>
+            <attack-steering-cue-enabled type="bool">true</attack-steering-cue-enabled>
+            <max-g type="int">30</max-g>
+            <thrust-lbf-stage-1 type="double">2700</thrust-lbf-stage-1>                <!-- The python program -->
+            <thrust-lbf-stage-2 type="double">280</thrust-lbf-stage-2>                <!-- The python program -->
+            <stage-1-duration-sec type="double">10.0</stage-1-duration-sec>                <!-- The python program -->
+            <stage-2-duration-sec type="double">18.0</stage-2-duration-sec>                <!-- The python program -->
+            <self-destruct-time-sec type="double">110</self-destruct-time-sec>                <!-- guess -->
+            <weight-launch-lbs>291</weight-launch-lbs>
+            <weight-warhead-lbs>44</weight-warhead-lbs>
+            <weight-fuel-lbm type="double">130</weight-fuel-lbm>
+            <drag-coeff type="double">0.3</drag-coeff>                                  <!-- The python program -->
+            <cross-section-sqft type="double">0.2739</cross-section-sqft>
+            <loft-altitude>0</loft-altitude>
+            <min-speed-for-guiding-mach type="double">0.6</min-speed-for-guiding-mach>
+            <max-report-distance type="double">65</max-report-distance>
+            <arming-time-sec type="double">1.6</arming-time-sec>
+            <rail type="bool">false</rail><!-- wingtips will be set to rail by station-manager -->
+            <rail-length-m type="double">2.6924</rail-length-m><!-- LAU 127 Missile Launcher -->
+            <rail-point-forward type="bool">true</rail-point-forward>
+            <navigation type="string">PN</navigation>
+            <class type="string">A</class>
+            <fire-msg type="string">Fox 3</fire-msg>
+            <telemetry type="bool">true</telemetry>                <!-- enable for aim 120 to see datalink info -->
+            <DLZ type="bool">true</DLZ>
+            <DLZ-optimal-alt-feet type="double">30000</DLZ-optimal-alt-feet>
+            <DLZ-optimal-closing-mach type="double">2.0</DLZ-optimal-closing-mach>
+            <ready-time type="double">1.5</ready-time>
+            <reaquire type="bool">true</reaquire>
+            <guide-before-ignition type="bool">true</guide-before-ignition>
+            <ejector-speed-fps type="double">20</ejector-speed-fps>
+            <drop-time type="double">0.5</drop-time>
+            <lock-on-after-launch type="bool">true</lock-on-after-launch>
+            <auto-switch-target-allowed type="bool">false</auto-switch-target-allowed>
+            <prowl-flight type="string">gyro-pitch</prowl-flight>
+            <switch-time-sec type="double">5</switch-time-sec>
+        </aim-120>
+        </armament>
+    </payload>
+
+
+	<systems>
+		<autopilot>
+			<path>Aircraft/XFA-27/System/autopilot5.xml</path>
+		</autopilot>
+		
+		<refuel>
+  <type>boom</type>
+  <serviceable type="bool">true</serviceable>
+ </refuel>
+	</systems>
+
+	<consumables>
+		<fuel>
+			<tank n="0">
+				<name>FWD fuselage</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="1">
+				<name>AFT fuselage</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+
+			<tank n="2">
+				<name>L wing</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="3">
+				<name>R wing</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="4">
+        <name>Left-tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="5">
+        <name>Right-Tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+			
+			</fuel>
+	</consumables>
+	
+	
+	<ai>
+    <closest>
+      <callsign type="string">   0 </callsign>
+      <range type="double">     -2 </range>
+      <heading type="int">       0 </heading>
+      <bearing type="int">       0 </bearing>
+      <altitude type="int">      0 </altitude>
+      <speed type="int">         0 </speed>
+      <longitude type="double">  0 </longitude>
+      <latitude type="double">   0 </latitude>
+    </closest>
+	<scenario>
+	   <path>Aircraft/XFA-27/AI/EGOD_arrestor_cables.xml</path>
+	  </scenario>
+  </ai>
+  
+
+
+	<controls>
+<armament>
+<station n="1">
+                <offsets>
+                    <x-m type="double">  0</x-m>
+                    <y-m type="double">	 0</y-m>
+                    <z-m type="double">  0</z-m>
+                </offsets>
+            </station>
+            <station n="2">
+                <offsets>
+                    <x-m type="double">  0</x-m>
+                    <y-m type="double">  0</y-m>
+                    <z-m type="double">  0</z-m>
+                </offsets>
+            </station>
+            <station n="3">
+                <offsets>
+                    <x-m type="double">  0</x-m>
+                    <y-m type="double">  0</y-m>
+                    <z-m type="double">  0</z-m>
+                </offsets>
+            </station>
+            <station n="4">
+                <offsets>
+                    <x-m type="double">  0</x-m>
+                    <y-m type="double">  0</y-m>
+                    <z-m type="double">  0</z-m>
+                </offsets>
+            </station>
+            <station n="5">
+                <offsets>
+                    <x-m type="double">   0</x-m>
+                    <y-m type="double">   0</y-m>
+                    <z-m type="double">   0</z-m>
+                </offsets>
+            </station>
+            <station n="6">
+                <offsets>
+                    <x-m type="double">   0</x-m>
+                    <y-m type="double">   0</y-m>
+                    <z-m type="double">   0</z-m>
+                </offsets>
+            </station>
+        </armament>
+	</controls>
+
+  <payload>
+<d-config>
+ <full_damage_dist_m type="double">3</full_damage_dist_m>
+        <use_hitpoints_instead_of_failure_modes_bool type="bool">true</use_hitpoints_instead_of_failure_modes_bool>
+        <hp_max type="double">90</hp_max>
+        <hitable_by_air_munitions type="bool">true</hitable_by_air_munitions>
+        <hitable_by_cannon type="bool">true</hitable_by_cannon>
+        <is_fleet type="bool">false</is_fleet>
+        <rwr_to_screen type="bool">true</rwr_to_screen>
+        <rwr_audio_extended type="bool">false</rwr_audio_extended>
+        <tacview_supported type="bool">false</tacview_supported>
+        <m28_auto type="bool">false</m28_auto>
+        <mlw_max type="double">2.25</mlw_max>
+        <auto_flare_caller type="bool">false</auto_flare_caller>
+</d-config>
+ <armament>
+				<models type="string">Aircraft/XFA-27/Models/Armament/Weapons</models>
+                <modelsUseCase type="bool">true</modelsUseCase>
+                <modelsUpperCase type="bool">true</modelsUpperCase>
+                <MP-lat type="string">rotors/main/blade[0]/flap-deg</MP-lat>
+                <MP-lon type="string">rotors/main/blade[1]/flap-deg</MP-lon>
+                <MP-alt type="string">rotors/main/blade[2]/flap-deg</MP-alt>
+                <MP-alt-ft type="string">rotors/main/blade[2]/position-deg</MP-alt-ft>
+                <hit-interpolation type="bool">true</hit-interpolation>
+                <gnd-launch type="bool">false</gnd-launch>
+                <pylon-offset type="int">1</pylon-offset>
+                <pylon-stations>controls/armament</pylon-stations>
+                <station-name type="string">station</station-name>
+				<msg type="bool">true</msg>
+				<damage type="bool">true</damage>
+                <enable-craters type="bool">true</enable-craters>
+                <MLW-bearing type="double">0</MLW-bearing>
+                <MLW-count type="int">0</MLW-count>
+                <MLW-launcher type="string"></MLW-launcher>
+                <MAW-bearing type="double">0</MAW-bearing>
+                <MAW-active type="bool">false</MAW-active>
+                <spike type="bool">true</spike>
+                <!-- speed: Mach 4.5   length: 10.60m -->
+
+
+
+<!-- Aim9 -->
+
+
+ <aim-9l>
+            <type-id type="int">57</type-id>
+            <short-name type="string">A-9L</short-name>
+            <long-name type="string">AIM-9L Sidewinder</long-name>
+            <vol-search type="double">0.25</vol-search>
+            <vol-track type="double">0.60</vol-track>
+            <guidance type="string">heat</guidance>
+            <navigation type="string">OPN</navigation>
+            <all-aspect type="bool">true</all-aspect>
+            <max-fire-range-nm type="double">9.7</max-fire-range-nm>
+            <FCS-field-deg type="int">55</FCS-field-deg>                       <!-- source: History of the Electro-Optical Guided Missiles and AAM -->
+            <seeker-field-deg type="int">82</seeker-field-deg>                 <!-- source: 40 deg gyro + 1 deg searcher-beam-width -->
+            <max-g type="int">32</max-g>                                  <!-- source: aim-9j southeast asia introduction: 22 for AIM-9J, increased it for AIM-9L -->
+            <thrust-lbf-stage-1 type="double">2660</thrust-lbf-stage-1><!-- source: Standard missile Characteristics -->
+            <thrust-lbf-stage-2 type="double">0.0</thrust-lbf-stage-2>
+            <stage-1-duration-sec type="double">5.23</stage-1-duration-sec><!-- source: Standard missile Characteristics -->
+            <stage-2-duration-sec type="double">0.0</stage-2-duration-sec>
+            <weight-launch-lbs type="double">186.2</weight-launch-lbs>      <!-- source: Standard missile Characteristics -->
+            <weight-warhead-lbs type="double">20.8</weight-warhead-lbs>
+            <weight-fuel-lbm type="double">60.4</weight-fuel-lbm>           <!-- source: Standard missile Characteristics -->
+            <drag-coeff type="double">0.55</drag-coeff>                   <!-- too low. The python program estimates much larger. But since RB24 and RB24J have to be adjust also I'll wait till I got their numbers. -->
+            <cross-section-sqft type="double">0.143</cross-section-sqft>
+            <arming-time-sec type="double">1.4</arming-time-sec>          <!-- Source: arboga robot museum report for AIM-9J -->
+            <min-speed-for-guiding-mach type="double">0.8</min-speed-for-guiding-mach><!-- Source: arboga robot museum report for AIM-9J -->
+            <self-destruct-time-sec type="double">51</self-destruct-time-sec>         <!-- Source: arboga robot museum report for AIM-9J is 43. AIM-9M is 60. So something in between. -->
+            <seeker-angular-speed-dps type="double">19</seeker-angular-speed-dps> <!-- Source: arboga robot museum report: AIM-9J is 14, aim-9j southeast asia introduction: 12 for AIM-9E, increased for AIM-9L, but less than aim9m -->
+            <rosette-radius-deg type="double">0</rosette-radius-deg>
+            <sw-expanded-acquisition-mode type="bool">true</sw-expanded-acquisition-mode>
+            <nutate-double-d-instead-of-circle type="bool">false</nutate-double-d-instead-of-circle>
+            <seeker-filter type="double">1.4</seeker-filter>
+            <lock-on-sun-deg type="double">5</lock-on-sun-deg>       <!-- AAM -->
+            <loft-altitude type="int">0</loft-altitude>
+            <min-fire-range-nm type="double">0.2</min-fire-range-nm>             <!-- A little more than aim-9m -->
+            <expand-min-fire-range type="bool">true</expand-min-fire-range>
+            <rail type="bool">true</rail>
+            <rail-length-m type="double">2.667</rail-length-m><!-- 16S210 AIM-9 Missile Launcher -->
+            <rail-point-forward type="bool">true</rail-point-forward>
+            <max-report-distance type="double">65</max-report-distance>
+            <class type="string">A</class>
+            <fire-msg type="string">Fox 2</fire-msg>
+            <DLZ type="bool">true</DLZ>
+            <DLZ-optimal-alt-feet type="double">25000</DLZ-optimal-alt-feet>
+            <DLZ-optimal-closing-mach type="double">2.0</DLZ-optimal-closing-mach>
+            <seeker-beam-width-deg type="double">4</seeker-beam-width-deg>
+            <reaquire type="bool">false</reaquire>
+            <lock-on-after-launch type="bool">false</lock-on-after-launch>
+            <auto-switch-target-allowed type="bool">false</auto-switch-target-allowed>
+            <prowl-flight type="string">gyro-pitch</prowl-flight>
+            <switch-time-sec type="double">5</switch-time-sec>
+            <coolable type="bool">true</coolable>
+            <cool-time type="double">30</cool-time><!-- source: F-15 Armament Handbook say to start 25 seconds before launch of AIM-9L. OP 3353 for AIM-9D is 60s but nitrogen, this is argon cooled though. -->
+            <cool-duration type="int">5400</cool-duration>                  <!-- source: OP 3353 for AIM-9D is ~2 hours. GR1F-16CJ-34-1-1 page 1-402 say 1.5h average for aim9m and 9l -->
+            <warm-detect-range-nm type="double">6.5</warm-detect-range-nm>
+            <detect-range-nm type="double">9.7</detect-range-nm>            <!-- source: Standard missile Characteristics 1974: 4.6 NM against M0.9 5G target -->
+            <ready-time type="double">0.5</ready-time>
+            <proportionality-constant type="double">3</proportionality-constant> <!-- source for 4: AD-A272 984 -->
+            <simplified-induced-drag type="bool">false</simplified-induced-drag>
+            <wing-aspect-ratio type="double">8</wing-aspect-ratio>
+            <wing-efficiency-relative-to-an-elliptical-planform type="double">0.85</wing-efficiency-relative-to-an-elliptical-planform>
+        </aim-9l>
+    </armament>
+</payload>
+
+ <rotors>
+        <main>
+            <blade n="0">
+                <flap-deg type="double">0</flap-deg>
+            </blade>
+            <blade n="1">
+                <flap-deg type="double">0</flap-deg>
+            </blade>
+            <blade n="2">
+                <flap-deg type="double">0</flap-deg>
+                <position-deg type="double">0</position-deg>
+            </blade>
+        </main>
+    </rotors>
+
+    
+		<lighting>
+			<instruments-norm type="double">0</instruments-norm>
+			<panel-norm type="double">0</panel-norm>
+			<strobe type="bool">false</strobe>
+			<nav-lights type="bool">true</nav-lights>
+		</lighting>
+
+		<gear>
+			<!-- Start with the Parking Brake on -->
+			<brake-parking type="double">1.0</brake-parking>
+		</gear>
+
+
+	<engines>
+		<engine n="0">
+			<running>true</running>
+		</engine>
+		<engine n="1">
+			<running>true</running>
+		</engine>
+	</engines>
+	
+	<canopy>
+		<canopy-pos-norm type="float">1.0</canopy-pos-norm>
+	</canopy>
+	
+	<environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+
+	<input>
+		 <keyboard>
+	
+			<key n="4">
+				<name>Ctrl-d</name>
+				<desc>Open/close baydoors</desc>
+				<binding>
+					<command>nasal</command>
+					<script>baydoors.baydoors_switch(2)</script>
+				</binding>
+			</key>
+			
+			<key n="99">
+				<name>c</name>
+				<desc>Open/close canopy</desc>
+				<binding>
+					<command>nasal</command>
+					<script>f22.canopy_switch(2)</script>
+				</binding>
+			</key>
+			
+			<key n="101">
+				<name>e</name>
+				<desc>Gun</desc> 
+				<binding>
+					<command>property-assign</command>
+					<property>controls/armament/trigger</property>
+					<value>true</value>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>property-assign</command>
+						<property>controls/armament/trigger</property>
+						<value>false</value>
+					</binding> 
+				</mod-up>
+			</key>
+			
+			 <key n="108">
+	 <name>l</name>
+     <desc>Trigger flare release</desc>
+     <binding>
+      <command>property-toggle</command>
+      <property>ai/submodels/submodel/flare-release</property>
+      <value type="bool">true</value>
+     </binding>
+     <mod-up>
+      <binding>
+       <command>property-assign</command>
+      <property>ai/submodels/submodel/flare-release</property>
+       <value type="bool">false</value>
+      </binding>
+     </mod-up>
+    </key>
+	
+	<key n="125">
+     <name>}</name>
+     <desc>Engine Autostart</desc>
+	<binding>
+		<command>nasal</command>
+		 <script>emu.autostart();</script>
+		
+	</binding>
+  </key>
+   <key n="72">
+    <name>H</name>
+    <desc>Active Target Seeking</desc>
+    <binding>
+       <command>nasal</command>
+       <script>hud.activate_borsight()</script>
+    </binding>
+  </key>
+  
+  <key n="84">
+    <name>t</name>
+    <desc>Active ECM</desc>
+    <binding>
+       <command>nasal</command>
+       <script>hud.activate_ECM()</script>
+    </binding>
+  </key>
+  
+  <key n="82">
+    <name>R</name>
+    <desc>Active Telemeter</desc>
+    <binding>
+       <command>nasal</command>
+       <script>hud.activate_Telemeter()</script>
+    </binding>
+  </key>
+  
+  <key n="116">
+    <name>t</name>
+    <desc>Ajusting Radar Distance</desc>
+    <binding>
+       <command>nasal</command>
+       <script>hud.switch_distance()</script>
+    </binding>
+  </key>
+  
+   <key n="81">
+    <name>q</name>
+    <desc>Toggle radar standby mode</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>instrumentation/radar/display-rdr</property>
+    </binding>
+  </key>
+  
+  
+  <key n="110">
+    <name>n</name>
+    <desc>Changes Target</desc>
+    <binding>
+      <command>nasal</command>
+      <script>hud.next_Target_Index()</script>
+    </binding>
+  </key>
+  
+  <key n="14">
+    <name>Ctrl-n</name>
+    <desc>Changes Target</desc>
+    <binding>
+      <command>nasal</command>
+      <script>hud.previous_Target_Index()</script>
+    </binding>
+  </key>
+  
+  <key n="79">
+   <name>O</name>
+   <desc>Hook down.</desc>
+   <binding>
+     <command>property-assign</command>
+     <property>controls/gear/tailhook</property>
+     <value type="double">1.0</value>
+   </binding>
+ </key>
+
+ <key n="111">
+   <name>o</name>
+   <desc>Hook Up.</desc>
+   <binding>
+     <command>property-assign</command>
+     <property>controls/gear/tailhook</property>
+     <value type="double">0.0</value>
+   </binding>
+ </key>
+
+<key n="67">
+   <name>C</name>
+   <desc>Catapult Launch Command.</desc>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/gear/catapult-launch-cmd</property>
+     <value type="bool">true</value>
+   </binding>
+   <mod-up>
+     <binding>
+       <command>property-assign</command>
+       <property>/controls/gear/catapult-launch-cmd</property>
+       <value type="bool">false</value>
+     </binding>
+   </mod-up>
+ </key>
+
+ <!-- map keys for launch-bar -->
+ <key n="76">
+   <name>L</name>
+   <desc>Launch-bar engage.</desc>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/gear/launchbar</property>
+     <value type="bool">true</value>
+   </binding>
+   <mod-up>
+     <binding>
+       <command>property-assign</command>
+       <property>/controls/gear/launchbar</property>
+       <value type="bool">false</value>
+     </binding>
+   </mod-up>
+ </key>
+
+   <key n="23">
+    <name>ctrl-w</name>
+    <desc>Toggle Master Arm</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>instrumentation/armament/master-arm</property>
+    </binding>
+  </key>
+  
+
+
+
+	
+		 </keyboard>
+	 </input>
+
+	<instrumentation>
+		<tacan>
+			<switch-position type="int">1</switch-position>
+		</tacan>
+		<nav>
+			<frequencies>
+				<selected-freq type="double">115.8</selected-freq>
+				<standby-freq type="double">115.8</standby-freq>
+			</frequencies>
+		</nav>
+		
+		
+
+ 
+ 
+ 
+		 <rwr>
+      <display-lighting-intens type="double">0.4</display-lighting-intens>
+      <symbology-lighting-intens type="double">1</symbology-lighting-intens>
+    </rwr>
+
+		<enav><selected type="int">3</selected></enav>
+		  <radar>
+      <range type="int" archive="y">40</range>
+      <range-factor type="double" archive="n">0.001888</range-factor>
+      <minimized type="bool" archive="y">false</minimized>
+      <selected type="int">3</selected>
+      <!-- inicio en pruebas -->
+      <enabled type="bool">true</enabled>
+      <az-field type="double">140</az-field>
+      <range type="double">150</range>
+      <range-selected type="double">40</range-selected>
+      <radar2-range type="double">150</radar2-range>
+      <display-rdr type="bool">true</display-rdr>
+      <radar-standby type="int">0</radar-standby>
+      <mode>
+        <rws type="bool">true</rws>
+        <tws-auto type="bool">false</tws-auto>
+      </mode>
+    </radar> 
+
+    <terrain-radar>
+      <hi-elev>
+        <alt-ft type="double">-9999.9</alt-ft>
+        <lat-deg type="double">-9999.9</lat-deg>
+        <lon-deg type="double">-9999.9</lon-deg>
+        <dist-m type="double">-9999.9</dist-m>
+        <collision-status type="string">initialised</collision-status>
+      </hi-elev>
+      <settings>
+        <mode type="string">extend</mode>
+        <state type="string">off</state>
+        <range-m type="double">2500</range-m>
+        <step-m type="double">250</step-m>
+        <max-climb-rate-fps type="double">120</max-climb-rate-fps>
+        <hi-elev-markers type="bool">false</hi-elev-markers>
+      </settings>
+    </terrain-radar>
+  <efis>
+
+			<ecam>
+					<display-mode type="string">FUEL</display-mode>
+			</ecam>
+			<nd>
+					<display-mode type="string">VOR</display-mode>
+					<display-mode-knob type="int">2</display-mode-knob>
+					<display-range type="int">20</display-range>
+				
+			</nd>
+			<input>
+				<vor-adf-1 type="int">1</vor-adf-1>
+				<vor-adf-2 type="int">1</vor-adf-2>
+				<CSTR type="bool">1</CSTR>
+				<WPT type="bool">1</WPT>
+				<VORD type="bool">1</VORD>
+				<NDB type="bool">1</NDB>
+				<ARPT type="bool">1</ARPT>
+				<WX type="bool">1</WX>
+				<TERR type="bool">1</TERR>
+				<TRAF type="bool">1</TRAF>
+				<taxi type="bool">1</taxi>
+			</input>
+
+		
+		</efis>
+		
+	</instrumentation>
+
+	<nasal>
+
+	<xfa27>
+			<file>Aircraft/XFA-27/Nasal/Liveries.nas</file>
+			<file>Aircraft/XFA-27/Nasal/hud.nas</file>
+			<file>Aircraft/XFA-27/Nasal/xfa27.nas</file>
+			<file>Aircraft/XFA-27/Nasal/light.nas</file>
+			<file>Aircraft/XFA-27/Nasal/doors.nas</file>
+<file>Aircraft/XFA-27/Nasal/SAS.nas</file>
+		</xfa27>
+		
+		<baydoors>
+ 			<file>Aircraft/XFA-27/Nasal/baydoors.nas</file>
+ 		</baydoors>
+		<low>
+            <file>Aircraft/XFA-27/Nasal/low.nas</file>
+        </low>
+<!-- oprf stuff plane might not show up in fgrun -->
+<notifications>
+<file>Aircraft/XFA-27/Nasal/ArmamentNotification.nas</file>
+<file>Aircraft/XFA-27/Nasal/GeoBridgedTransmitter.nas</file>
+</notifications>
+
+
+<damage>
+<file>Aircraft/XFA-27/Nasal/damage.nas</file>
+</damage>
+
+<armament>
+<file>Aircraft/XFA-27/Nasal/missile-code.nas</file>
+</armament>
+	
+<vector>
+<file>Aircraft/XFA-27/Nasal/vector.nas</file>
+</vector>
+	
+<fire_control>
+<file>Aircraft/XFA-27/Nasal/fire-control.nas</file>
+</fire_control>
+    <guns>
+      <file>Aircraft/F-22/Nasal/weapons.nas</file>
+    </guns>
+	
+<hud>
+      <file>Aircraft/XFA-27/Nasal/MiscRwr.nas</file>
+</hud>
+	
+	<terrain-map>
+ 
+<file>Aircraft/XFA-27/Nasal/terrain-map.nas</file>
+ 
+</terrain-map>
+	
+		<aar> 
+            <file>Aircraft/Generic/aar.nas</file>
+        </aar>
+        <rwr>
+            <file>Aircraft/XFA-27/Nasal/rwr.nas</file>
+        </rwr> 
+        <radardist>
+            <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+        </radardist>
+		<radar>
+            <file>Aircraft/XFA-27/Nasal/radar.nas</file> 
+        </radar>
+        <radar2>
+            <file>Aircraft/XFA-27/Nasal/radar2.nas</file>
+        </radar2>
+
+ <fire-control>
+            <file>Aircraft/XFA-27/Nasal/fire-control.nas</file>
+        </fire-control>
+		
+		<engines>
+   <file>Aircraft/XFA-27/Nasal/generic-yasim-engine.nas</file>
+  </engines>
+  
+  <emu>
+   <file>Aircraft/XFA-27/Nasal/emu.nas</file>
+  </emu>
+  <enav>
+<file>Aircraft/XFA-27/Nasal/enav.nas</file>
+</enav>
+<fuel>
+   <file>Aircraft/XFA-27/Nasal/fuel.nas</file>
+  </fuel>
+
+	</nasal>
+
+</PropertyList>

@@ -1,0 +1,23 @@
+XFA-27 Todo List
+
+1. change default view hight
+
+2. -----------------------------
+
+ add Carrier catapult launching  [[D-O-N-E]] Shift-l Shift-c [DONE]  [Use X02 or F-18 type of luanch]  
+
+4. -----------------------------
+
+ Get new better FDM, [DONE] Yasim is the best sim
+
+6. Fix Splash Screen somehow ¯\_(ツ)_/¯
+
+ Textures [DONE] and some cool sounds
+
+8. More textures :) [NOT SO DONE]
+
+9. make NEW Mfd's 
+
+ get guns (press e) and damage from targets over MP  [DONE]
+
+last. Rebuild missiles from scratch For wepons over mp [HELP WANTED]
