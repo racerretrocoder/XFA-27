@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!-- cockpit -->
+
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>50</max-m>
+    </animation>
+
+<model>
+    <path>newcockpit.ac</path>
+	<offsets>
+      <x-m> 0 </x-m>
+      <y-m>0 </y-m>
+      <z-m>0.3 </z-m>
+    </offsets>
+  </model>
+
+ <animation>
+ <type>rotate</type>
+ <object-name>SPEED</object-name>
+  <property>/controls/engines/throttle-all</property>
+  <factor>-50</factor>
+  <offset-deg>50</offset-deg>
+  <center>
+   <x-m>-5.4</x-m>
+   <y-m>-0.2</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+<animation>
+  <type>pick</type>
+   <object-name>ENGSTRT</object-name>
+   <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+   
+    <binding>
+   <command>nasal</command>
+ <script>emu.autostart();</script>
+    </binding>
+   
+   </action>
+ </animation>
+
+
+<animation>
+  <type>pick</type>
+   <object-name>MASTERARM</object-name>
+   <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+   <binding>
+    <property>/controls/armament/master-arm</property>
+   </binding>
+   </action>
+ </animation>
+  
+  <!-- Hud computer -->
+  <model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/comms.xml</path>
+			<offsets>
+				<x-m>-1.0</x-m>
+					<y-m>0</y-m>
+				<z-m>-0.55</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	
+	<!-- Small screens -->
+	
+	<!-- left -->
+	<model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/small-screens/left.xml</path>
+			<offsets>
+				<x-m>-1.0</x-m>
+					<y-m>0</y-m>
+				<z-m>-0.5491</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	
+	<!-- right -->
+	<model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/small-screens/right.xml</path>
+			<offsets>
+				<x-m>-1.0</x-m>
+					<y-m>0</y-m>
+				<z-m>-0.55</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	
+	<!-- main MFD's NOTFINISHED -->
+	
+	<model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/MFD/right-mfd.xml</path>
+			<offsets>
+				<x-m>-5.767</x-m>
+					<y-m>0.242</y-m>
+				<z-m>0.04</z-m>
+			<pitch-deg>-10</pitch-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/MFD/centre-mfd.xml</path>
+			<offsets>
+				<x-m>-5.767</x-m>
+					<y-m>-0.01</y-m>
+				<z-m>0.02</z-m>
+			<pitch-deg>-10</pitch-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/MFD/left-mfd.xml</path>
+			<offsets>
+				<x-m>-5.767</x-m>
+					<y-m>-0.262</y-m>
+				<z-m>0.02</z-m>
+			<pitch-deg>-10</pitch-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/XFA-27/Models/Interior/Instruments/MFD/lower-mfd.xml</path>
+			<offsets>
+				<x-m>-5.65</x-m>
+					<y-m>-0.01</y-m>
+				<z-m>-0.48</z-m>
+			<pitch-deg>-45</pitch-deg>
+		</offsets>
+	</model>
+	
+	
+  <model>
+    <path>Aircraft/XFA-27/Models/Interior/Instruments/Radar2/Radar.xml</path>
+    <offsets>
+     <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+<pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
