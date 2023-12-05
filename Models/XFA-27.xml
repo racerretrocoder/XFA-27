@@ -118,8 +118,8 @@
 	<name>interior</name>
 		<path>Aircraft/XFA-27/Models/Interior/Interior.xml</path>
 			<offsets>
-				<x-m>0</x-m>
-			        <y-m>0</y-m>
+				<x-m>-0.1</x-m>
+			        <y-m>0.0095</y-m>
 				<z-m>0</z-m>
 			<pitch-deg>0</pitch-deg>
 		</offsets>
@@ -148,7 +148,7 @@
 </model>	
 
 
-<!-- Livery 
+<!-- Livery 	-->
 
 	<nasal>
 		<load>
@@ -166,7 +166,7 @@
 		<texture>Liveries/Default.png</texture>
 	</animation>
 	
-	-->
+
 	
 <!-- Weapon bay doors -->
 
@@ -340,6 +340,7 @@
 	<animation>
 		<type>rotate</type>
 			<object-name>RCANARD</object-name>
+			<object-name>RRCANARD</object-name>
 				<property>surface-positions/right-taileron-pos-norm</property>
 					<factor>15</factor>
 						<center>
@@ -357,6 +358,7 @@
 	<animation>
 		<type>rotate</type>
 			<object-name>LCANARD</object-name>
+			<object-name>RLCANARD</object-name>
 					<property>surface-positions/left-taileron-pos-norm</property>
 						<factor>15</factor>
 							<center>
@@ -375,6 +377,7 @@
 <animation>
 		<type>rotate</type>
 			<object-name>RWING</object-name>
+<object-name>RRWING</object-name>
 				   <property>velocities/airspeed-kt</property>
 						<factor>20</factor>
   <interpolation>
@@ -398,6 +401,7 @@
 <animation>
 		<type>rotate</type>
 			<object-name>LWING</object-name>
+			<object-name>RLWING</object-name>
 					   <property>velocities/airspeed-kt</property>
        					<factor>-20</factor>
 					  <interpolation>
@@ -422,6 +426,7 @@
 <animation>
 		<type>rotate</type>
 			<object-name>RWING</object-name>
+<object-name>RRWING</object-name>
 				   <property>/controls/flight/flaps</property>
 						<factor>20</factor>
  
@@ -442,6 +447,7 @@
 <animation>
 		<type>rotate</type>
 			<object-name>LWING</object-name>
+			<object-name>RLWING</object-name>
 					   <property>/controls/flight/flaps</property>
        					<factor>-20</factor>
 					 
