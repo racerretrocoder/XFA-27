@@ -1,6 +1,6 @@
 # XFA-27
 An XFA-27 From Ace combat 2 (tm) to Flightgear, 
-	/fgfs-20231205031035.png
+	!fgfs-20231205031035.png [this plane]
 # Now with damage on it! 
 so you can shoot down your freinds in any OPRF damageable aircraft, F-16, Viggen, and sams too
 
